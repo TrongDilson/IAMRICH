@@ -10,10 +10,10 @@
 		4A08F1462C477AB500BD05E5 /* IAMRICHApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08F1452C477AB500BD05E5 /* IAMRICHApp.swift */; };
 		4A08F1482C477AB500BD05E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08F1472C477AB500BD05E5 /* ContentView.swift */; };
 		4A08F14A2C477AB700BD05E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A08F1492C477AB700BD05E5 /* Assets.xcassets */; };
-		4A08F14D2C477AB700BD05E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A08F14C2C477AB700BD05E5 /* Preview Assets.xcassets */; };
 		4A08F1572C477AB700BD05E5 /* IAMRICHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08F1562C477AB700BD05E5 /* IAMRICHTests.swift */; };
 		4A08F1612C477AB700BD05E5 /* IAMRICHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08F1602C477AB700BD05E5 /* IAMRICHUITests.swift */; };
 		4A08F1632C477AB700BD05E5 /* IAMRICHUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08F1622C477AB700BD05E5 /* IAMRICHUITestsLaunchTests.swift */; };
+		4A42AFDA2C47A40E00131B9E /* GlowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42AFD92C47A40E00131B9E /* GlowText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +38,12 @@
 		4A08F1452C477AB500BD05E5 /* IAMRICHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAMRICHApp.swift; sourceTree = "<group>"; };
 		4A08F1472C477AB500BD05E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A08F1492C477AB700BD05E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4A08F14C2C477AB700BD05E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A08F1522C477AB700BD05E5 /* IAMRICHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAMRICHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A08F1562C477AB700BD05E5 /* IAMRICHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAMRICHTests.swift; sourceTree = "<group>"; };
 		4A08F15C2C477AB700BD05E5 /* IAMRICHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAMRICHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A08F1602C477AB700BD05E5 /* IAMRICHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAMRICHUITests.swift; sourceTree = "<group>"; };
 		4A08F1622C477AB700BD05E5 /* IAMRICHUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAMRICHUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A42AFD92C47A40E00131B9E /* GlowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +94,12 @@
 		4A08F1442C477AB500BD05E5 /* IAMRICH */ = {
 			isa = PBXGroup;
 			children = (
+				4A42AFD92C47A40E00131B9E /* GlowText.swift */,
 				4A08F1452C477AB500BD05E5 /* IAMRICHApp.swift */,
 				4A08F1472C477AB500BD05E5 /* ContentView.swift */,
 				4A08F1492C477AB700BD05E5 /* Assets.xcassets */,
-				4A08F14B2C477AB700BD05E5 /* Preview Content */,
 			);
 			path = IAMRICH;
-			sourceTree = "<group>";
-		};
-		4A08F14B2C477AB700BD05E5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				4A08F14C2C477AB700BD05E5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		4A08F1552C477AB700BD05E5 /* IAMRICHTests */ = {
@@ -231,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A08F14D2C477AB700BD05E5 /* Preview Assets.xcassets in Resources */,
 				4A08F14A2C477AB700BD05E5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A42AFDA2C47A40E00131B9E /* GlowText.swift in Sources */,
 				4A08F1482C477AB500BD05E5 /* ContentView.swift in Sources */,
 				4A08F1462C477AB500BD05E5 /* IAMRICHApp.swift in Sources */,
 			);
