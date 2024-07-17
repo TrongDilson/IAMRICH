@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingAlert = false
     var body: some View {
         GeometryReader
         { geo in
@@ -26,17 +27,25 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .padding(30.0)
                         .frame(width: 350.0, alignment: .center)
+                        .glowBorder(color: .black, lineWidth: 2)
                     Spacer()
-                    Text("\n\n\t BING CHILLING\n\tFOR RICH PEOPLE")
-                        .font(.system(size: 30))
+                    Text("BING CHILLING\n\tFOR RICH PEOPLE")
+                        .font(.system(size: 25))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .glowBorder(color: .red, lineWidth: 10)
                         .glowBorder(color: .blue, lineWidth: 7)
                         .multilineTextAlignment(.center)
-                    Spacer()
+                    
+                    Image("diamond-fancy")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding(10.0)
+                        .frame(width: 200.0, height: 200.0, alignment: .bottom)
+                        .glowBorder(color: .white, lineWidth: 9)
                     Button
                     {
+                        showingAlert = true
                         print("CONGRATULATIONS!!\nYOUR PRIZE IS EQUIVILANT TO 9,999,999,999 BING CHILLING")
                     } label:
                     {
@@ -44,14 +53,17 @@ struct ContentView: View {
                             .font(.system(size: 25))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .glowBorder(color: .red, lineWidth: 10)
-                            .glowBorder(color: .blue, lineWidth: 7)
+                            .glowBorder(color: .red, lineWidth: 8)
+                            .glowBorder(color: .blue, lineWidth: 4)
                             .multilineTextAlignment(.center)
                             .padding(20)
                             .overlay(
-                                    RoundedRectangle(cornerRadius: 14)
-                                        .stroke(.white, lineWidth: 9)
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .stroke(.white, lineWidth: 5)
                             )
+                    } .alert(isPresented: $showingAlert)
+                    {
+                        Alert(title: Text("ATTENTION!"), message: Text("GET A LOT OF NAPKINS\nYOUR PRIZE IS EQUIVILANT TO 9,999,999,999 BING CHILLING"), dismissButton: .default(Text("SIR YES SIR!")))
                     }
                 }
             }
